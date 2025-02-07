@@ -8,10 +8,10 @@ noremap <unique> <script> <silent> <Plug>SlimeCellsNext :<c-u>call slime_cells#g
 noremap <unique> <script> <silent> <Plug>SlimeCellsPrev :<c-u>call slime_cells#go_to_previous_cell()<cr>
 noremap <unique> <script> <silent> <Plug>SlimeCellsSendAndGoToNext :<c-u>call slime_cells#send_cell_and_go_to_next()<cr>
 
-onoremap <silent> ic :<c-u>call slime_cells#select_current_cell(0)<cr>
-onoremap <silent> ac :<c-u>call slime_cells#select_current_cell(1)<cr>
-vnoremap <silent> ic :<c-u>call slime_cells#select_current_cell(0)<cr>
-vnoremap <silent> ac :<c-u>call slime_cells#select_current_cell(1)<cr>
+onoremap <silent> io :<c-u>call slime_cells#select_current_cell(0)<cr>
+onoremap <silent> ao :<c-u>call slime_cells#select_current_cell(1)<cr>
+vnoremap <silent> io :<c-u>call slime_cells#select_current_cell(0)<cr>
+vnoremap <silent> ao :<c-u>call slime_cells#select_current_cell(1)<cr>
 
 if !exists("g:slime_cells_highlight_from")
     let g:slime_cells_highlight_from = "SpecialComment"
